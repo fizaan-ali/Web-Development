@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectror */
+        div{
+            /* background-color: red; */
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector  */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /* descendant selector  */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /* universal selector  */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selectors  */
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: aqua;
+            /* whereever p is first child of its parent apply this  */
+        }
+    </style>
+</head>
+<body>
+    <div id="green">
+        I am div
+        <p>I am a para inside div</p>
+    </div>
+    <div class="red">
+        I am another div 
+        <article><p>This is a para inside article inside div</p></article>
+    </div>
+    <span>
+        <a href="https://quora.com" target="_blank">Go to Quora</a>
+        <a href="https://microsoft.com" target="_blank">Go to Microsoft</a>
+    </span>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: green;
+            padding: 10px;
+            margin: 15px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box; /*it means that total height including border and padding not margin shoudl be 100px  */
+        }
+        .box2{
+            color: brown;
+            padding: 10px;
+            margin: 15px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box; /*it means that total height including border and padding not margin shoudl be 100px  */
+        }
+        /* now there would be margin collapsing --> if two margins collapse then bigger one will use  */
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>

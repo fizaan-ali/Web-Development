@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
+    <title>Forms</title>
+    <meta name="description" content="Forms submission and input"
+</head>
+<body>
+    <h1>Forms and Input </h1>
+    <form action="post">
+        <div>
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+        <div>
+            <h3>Which fruits do you like?</h3>
+            <input type="checkbox" id="orange" name="fruits">
+            <label for="orange">Oranges</label>
+            <input type="checkbox" id="apple" name="fruits">
+            <label for="apple">Apples</label>
+            <input type="checkbox" id="Mango" name="fruits">
+            <label for="Mango">Mangos</label>
+        </div>
+        <div>
+            <textarea name="comment" rows="3" cols="20" placeholder="Enter your comment here"></textarea>
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="mango">Mango</option>
+            </select>
+        </div>
+    </form>
+</body
+</html>
